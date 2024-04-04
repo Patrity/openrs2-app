@@ -18,5 +18,8 @@ export default defineNuxtConfig({
       }
     }
   },
+  ui: {
+
+  },
   devtools: { enabled: true }
 })
