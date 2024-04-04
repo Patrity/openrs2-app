@@ -5,9 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@nuxt/ui':
-    specifier: ^2.15.1
-    version: 2.15.1(nuxt@3.11.1)(vite@5.2.8)(vue@3.4.21)
+  '@iconify-json/fa-brands':
+    specifier: ^1.1.8
+    version: 1.1.8
+  '@nuxt/ui-pro':
+    specifier: ^1.1.0
+    version: 1.1.0(nuxt@3.11.1)(vite@5.2.8)(vue@3.4.21)
   nuxt:
     specifier: ^3.11.1
     version: 3.11.1(@unocss/reset@0.58.9)(floating-vue@5.2.2)(unocss@0.58.9)(vite@5.2.8)
@@ -873,6 +876,12 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
+  /@iconify-json/fa-brands@1.1.8:
+    resolution: {integrity: sha512-0HVT1+7hDww2vTtGyX4maUyiEXDYd6CK57bOGJ3hc3fjmXpMI9QKdej21pPSv1jBZ2nGzTlg8WJ2yNtN88/lFQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: false
+
   /@iconify-json/heroicons@1.1.20:
     resolution: {integrity: sha512-puNt1al/rDw8Rb5x8sfk20UA8AQjMskLMh63nSUBj+8I0lQ7LtX+0Qn8wow2xTXTEsynJ9xXLD8Aat53e0qi8A==}
     dependencies:
@@ -1374,6 +1383,41 @@ packages:
     transitivePeerDependencies:
       - rollup
       - supports-color
+
+  /@nuxt/ui-pro@1.1.0(nuxt@3.11.1)(vite@5.2.8)(vue@3.4.21):
+    resolution: {integrity: sha512-c8x8VDmnMYPognKq/V203UMK7JiZwmP+Vx5YIY74Y1DB+PS2alFGKXENy8rVZxx3HCA0b0WuwzACZ5405kv7yQ==}
+    dependencies:
+      '@nuxt/ui': 2.15.1(nuxt@3.11.1)(vite@5.2.8)(vue@3.4.21)
+      '@vueuse/core': 10.9.0(vue@3.4.21)
+      defu: 6.1.4
+      git-url-parse: 14.0.0
+      ofetch: 1.3.4
+      parse-git-config: 3.0.0
+      pathe: 1.1.2
+      pkg-types: 1.0.3
+      tailwind-merge: 2.2.2
+      vue3-smooth-dnd: 0.0.6(vue@3.4.21)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - async-validator
+      - axios
+      - change-case
+      - drauu
+      - focus-trap
+      - idb-keyval
+      - jwt-decode
+      - nprogress
+      - nuxt
+      - qrcode
+      - rollup
+      - sortablejs
+      - supports-color
+      - ts-node
+      - uWebSockets.js
+      - universal-cookie
+      - vite
+      - vue
+    dev: false
 
   /@nuxt/ui-templates@1.3.2:
     resolution: {integrity: sha512-aLHpV7Nj2cAHM2hPtwOtT2OIeOy4p6GN5qvNm6zBt6wke33t1jn0PR/FNwvKROIxM0xTAwB6jdmRJLXRPVGNhA==}
@@ -4539,6 +4583,12 @@ packages:
     dependencies:
       git-up: 7.0.0
 
+  /git-url-parse@14.0.0:
+    resolution: {integrity: sha512-NnLweV+2A4nCvn4U/m2AoYu0pPKlsmhK9cknG7IMwsjFY1S2jxM+mAhsDxyxfCIGfGaD+dozsyX4b6vkYc83yQ==}
+    dependencies:
+      git-up: 7.0.0
+    dev: false
+
   /glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
     engines: {node: '>= 6'}
@@ -7463,6 +7513,10 @@ packages:
   /smob@1.5.0:
     resolution: {integrity: sha512-g6T+p7QO8npa+/hNx9ohv1E5pVCmWrVCUzUXJyLdMmftX6ER0oiWY/w9knEonLpnOp6b6FenKnMfR8gqwWdwig==}
 
+  /smooth-dnd@0.12.1:
+    resolution: {integrity: sha512-Dndj/MOG7VP83mvzfGCLGzV2HuK1lWachMtWl/Iuk6zV7noDycIBnflwaPuDzoaapEl3Pc4+ybJArkkx9sxPZg==}
+    dev: false
+
   /socks-proxy-agent@8.0.3:
     resolution: {integrity: sha512-VNegTZKhuGq5vSD6XNKlbqWhyt/40CgoEw8XxD6dhnm8Jq9IEa3nIa4HwnM8XOqU0CdB0BwWVXusqiFXfHB3+A==}
     engines: {node: '>= 14'}
@@ -8546,6 +8600,15 @@ packages:
       vue: 3.4.21
       vue-observe-visibility: 2.0.0-alpha.1(vue@3.4.21)
       vue-resize: 2.0.0-alpha.1(vue@3.4.21)
+
+  /vue3-smooth-dnd@0.0.6(vue@3.4.21):
+    resolution: {integrity: sha512-CH9ZZhEfE7qU1ef2rlfgBG+nZtQX8PnWlspB2HDDz1uVGU7fXM0Pr65DftBMz4X81S+edw2H+ZFG6Dyb5J81KA==}
+    peerDependencies:
+      vue: ^3.0.11
+    dependencies:
+      smooth-dnd: 0.12.1
+      vue: 3.4.21
+    dev: false
 
   /vue@3.4.21:
     resolution: {integrity: sha512-5hjyV/jLEIKD/jYl4cavMcnzKwjMKohureP8ejn3hhEjwhWIhWeuzL2kJAjzl/WyVsgPY56Sy4Z40C3lVshxXA==}

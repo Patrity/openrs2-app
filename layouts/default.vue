@@ -3,6 +3,7 @@
 </script>
 
 <template>
-	Layout
+	<GlobalNav />
+	<NuxtLoadingIndicator color="#3b82f6" />
 	<slot />
 </template>

@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxtjs/seo'
   ],
+  extends: ['@nuxt/ui-pro'],
   site: {
     url: 'https://openrs2.netlify.app',
     name: 'OpenRS2 Archive',
@@ -19,7 +20,7 @@ export default defineNuxtConfig({
     }
   },
   ui: {
-
+    icons: ['heroicons', 'fa-brands']
   },
   devtools: { enabled: true }
 })
